@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RankPro Listings</title>
+  <link rel="icon" href="../imgs/icon.png" />
+
+  <link rel = "stylesheet" type = "text/css" href = "./business.css">
+
+</head>
+  <div class="container">
+
+
+    <div id="top_wrapper">
+      <img src="../imgs/logo_white.png" onclick="goToRankProWWW()">
+
+      <div id="info_text_input">
+        <input type="text" id="location_text" class="text_input" placeholder="City/Zip-Code">
+        <input type="text" id="business_text" class="text_input" placeholder="Business Category">
+
+        <button class="search button-hover" onclick="getTextInfo()">
+          <img src="../imgs/search.svg">
+        </button>
+      </div>
+    </div>
+
+
+    <!-- added with JS -->
+    <div id="addy_and_tags"></div>
+
+
+    <div id="bottom_info">
+      <div id="left_bottom_info">
+        <!-- added with JS -->
+        <h1 id="title">Loading...</h1>
+
+        <div id="stars_top">
+          <h4 id="stars_top_avg">N/A</h4>
+          <img src="../imgs/star_empty.svg">
+          <img src="../imgs/star_empty.svg">
+          <img src="../imgs/star_empty.svg">
+          <img src="../imgs/star_empty.svg">
+          <img src="../imgs/star_empty.svg">
+          <h4 id="stars_top_total">(N/A)</h4>
+        </div>
+
+        <!-- added with JS -->
+        <div id="time_breadcrumb"> 
+          <h4 id="time_breadcrumb_open">Closed</h4>
+        </div>
+
+        <!-- added with JS -->
+        <div id="about_this_business"> 
+          <h2>About This Business</h2>
+
+          <div id="about_tags">
+            <img src="../imgs/tag.svg">
+            <a id="about_tags_link" onclick="setBusinessType()">N/A</a>
+          </div>
+
+          <p id="about_body"></p>
+        </div>
+
+        <!-- added with JS -->
+        <div id="time_info">
+          <h2>Location Hours</h2>
+
+          <div id="time_info_list">     </div>
+        </div>
+
+
+        <div id="stars_main">
+          <div id="stars_main_avg">
+            <div id="star_main_title_and_image">
+              <h1 id="stars_main_avg_title">N/A</h1>
+              <img src="../imgs/star_full.svg">
+            </div>
+            <h4 id="stars_main_num">N/A</h4>
+          </div>
+
+          <div id="stars_main_list">
+            <div class="star_list_obj">
+              <h4>5</h4>
+              <img src="../imgs/star_full.svg">
+
+              <div class="star_bar_container">
+                <div class="star_bar_inner"></div>
+              </div>
+
+              <h5 class="star_num_ref">N/A</h5>
+            </div>
+
+            <div class="star_list_obj">
+              <h4>4</h4>
+              <img src="../imgs/star_full.svg">
+
+              <div class="star_bar_container">
+                <div class="star_bar_inner"></div>
+              </div>
+
+              <h5 class="star_num_ref">N/A</h5>
+            </div>
+
+            <div class="star_list_obj">
+              <h4>3</h4>
+              <img src="../imgs/star_full.svg">
+
+              <div class="star_bar_container">
+                <div class="star_bar_inner"></div>
+              </div>
+
+              <h5 class="star_num_ref">N/A</h5>
+            </div>
+
+            <div class="star_list_obj">
+              <h4>2</h4>
+              <img src="../imgs/star_full.svg">
+
+              <div class="star_bar_container">
+                <div class="star_bar_inner"></div>
+              </div>
+
+              <h5 class="star_num_ref">N/A</h5>
+            </div>
+
+            <div class="star_list_obj">
+              <h4>1</h4>
+              <img src="../imgs/star_full.svg">
+
+              <div class="star_bar_container">
+                <div class="star_bar_inner"></div>
+              </div>
+
+              <h5 class="star_num_ref">N/A</h5>
+            </div>
+          </div>
+        </div>
+
+        <div id="review_section">
+          
+
+        </div>
+
+        <div id="pageation">
+            <button id="back" onclick="back()"><</button>
+            <h4 id="page">1</h4>
+            <button id="forward" onclick="forward()">></button>
+        </div>
+
+      </div>
+
+      <div id="right_bottom_info">
+        
+
+        <div id="right_movable">
+
+          <div id="right_moveable_interact">
+            <p>
+              Unlock the power of RankPro with a free business scan, or book a custom demo to see how RankPro can boost your businesses SEO
+            </p>
+
+            <div id="top_button_pannell"> 
+              <a class="button_dark button-hover" href="https://app.rankpro.com/scan-business/">Scan Your Business</a>
+              <a class="button_light button-hover" href="https://rankpro.com/sign-up?hsLang=en">Book a RankPro Demo</a>
+            </div>
+          </div>
+
+          <div id="right_moveable_info">
+            <h3>Business Information</h3>
+
+            <div class="business_info_obj">
+              <img src="../imgs/pin.svg">
+              <h4 id="address">N/A</h4>
+            </div>
+
+            <div class="business_info_obj">
+              <img src="../imgs/www.svg">
+              <a id="website">N/A</a>
+            </div>
+
+            <div class="business_info_obj">
+              <img src="../imgs/phone.svg">
+              <a id="phone_number">N/A</a>
+            </div>
+
+             <div class="business_info_obj">
+              <img src="../imgs/share.svg">
+
+              <a id="google_click_button">
+                <img src="https://cdn2.birdeye.com/profiles/images/icon-google-color.svg">
+                <h4>Google</h4>
+              </a>
+            </div>
+            
+          </div> 
+        </div>
+
+      </div>
+    </div>
+    
+
+    <div id="footer_wrapper">
+      <img src="../imgs/logo_white.png">
+      
+      <div id="footer_breadcrumbs">
+        <a href="https://app.rankpro.com/sign-in/">Business Login</a>
+        <h1>|</h1>
+        <a href="https://rankpro.com/terms">Terms of Use</a>
+        <h1>|</h1>
+        <a  href="https://rankpro.com/privacy-policy">Privacy Policy</a>
+      </div>
+
+      <h4>© Copyright 2023 RankPro, LLC | All Rights Reserved.</h4>
+    </div>
+
+  </div>
+
+  <script src="business_js/FirstInfo.js"></script>
+  <script src="business_js/TimeInfo.js"></script>
+  <script src="business_js/ReviewInfo.js"></script>
+  <script src="business_js/HTML.js"></script>
+  <script src="business_js/Main.js"></script>
+  <script src="business_js/Scrape.js"></script>
+
+
+
+</body>
+</hmtl>
+
+

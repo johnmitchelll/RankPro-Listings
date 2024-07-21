@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RankPro Listings</title>
+  <link rel="icon" href="../imgs/icon.png" />
+
+  <link rel = "stylesheet" type = "text/css" href = "./list.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="top_wrapper">
+      <div class="top_flex">
+        <img src="../imgs/logo_white.png" onclick="goToRankProWWW()">
+
+        <div id="info_text_input">
+          <input type="text" id="location_text" class="text_input" placeholder="City/Zip-Code">
+          <input type="text" id="business_text" class="text_input" placeholder="Business Category">
+
+          <button class="search button-hover" onclick="getTextInfo()">
+            <img src="../imgs/search.svg">
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bottom-flex">
+
+        <p id="hero_text" class="title2">Find Your Business</p>
+
+        <p id="feat_business_title" class="title2">Loading...</p>
+
+        <div id="featured"></div>
+
+        <p id="business_title" class="title2"></p>
+
+        <div id="locations_container"> </div>
+        
+        <map id="map"></map>
+    </div>
+
+    <div id="footer_wrapper">
+      <img src="../imgs/logo_white.png">
+      
+      <div id="footer_breadcrumbs">
+        <a href="https://app.rankpro.com/sign-in/">Business Login</a>
+        <h1>|</h1>
+        <a href="https://rankpro.com/terms">Terms of Use</a>
+        <h1>|</h1>
+        <a href="https://rankpro.com/privacy-policy">Privacy Policy</a>
+      </div>
+
+      <h4>© Copyright 2023 RankPro, LLC | All Rights Reserved.</h4>
+    </div>
+  </div>
+
+  <map id="map"></map>
+
+  <script src="list_js/Main.js"></script>
+  <script src="list_js/Scrape.js"></script>
+  <script src="list_js/HTML.js"></script>
+
+</body>
+</hmtl>
+
+

@@ -1,0 +1,134 @@
+<!-- https://app.rankpro.com/sign-in/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RankPro Listings</title>
+  <link rel="icon" href="./imgs/icon.png" />
+
+  <link rel = "stylesheet" type = "text/css" href = "./index.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="top_wrapper">
+      <div class="top_flex">
+        <img src="./imgs/logo_white.png" onclick="goToRankProWWW()">
+
+        <div id="top_sign_in_button">
+          <a class="contact" href="https://rankpro.com/contact">CONTACT</a>
+          <a class="sign-in button-hover" href="https://app.rankpro.com/sign-in/">SIGN IN</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="bottom-flex">
+
+
+      <div id="hero_container">
+        <img class="hero_img" src="./imgs/hero-group-image-01.png">
+
+        <div id="search_container">
+
+          <h1 id="hero_text">Find top-ranked businesses in your neighborhood</h1>
+
+          <p id="hero_text_small">
+            Local businesses ranked from <span>millions of user reviews</span> on all major trusted review sites.
+          </p>
+        </div>
+
+        <img class="hero_img" src="./imgs/hero-group-image-02.png">
+      </div>
+
+      <div id="search_award">
+        <div id="search_bar_container">
+          <input type="text" class="text_input" id="location_text" placeholder="City/Zip-Code">
+          <input type="text" class="text_input" id="business_text" placeholder="Business Name">
+          <button onclick="categoryEnter()"><img src="./imgs/search.svg"></button>
+        </div>
+            
+        <img src="./imgs/awards.png">
+      </div>
+
+      <div id="popular_container">
+          <h1>Popular Categories</h1>
+
+          <div id="popular_button_container">
+            <div class="popular_button" onclick="categoryClick('Automotive')">
+              <img src="./imgs/car.svg"> 
+              <h4>Automotive</h4>
+            </div>
+            <div class="popular_button" onclick="categoryClick('Beauty & Spas')">
+              <img src="./imgs/yoga.svg"> 
+              <h4>Beauty & Spas</h4>
+            </div>
+            <div class="popular_button" onclick="categoryClick('Coffee & Tea')">
+              <img src="./imgs/coffee.svg"> 
+              <h4>Coffee & Tea</h4>
+            </div>
+            <div class="popular_button" onclick="categoryClick('Home Services')">
+              <img src="./imgs/hammer.svg"> 
+              <h4>Home Services</h4>
+            </div>  
+            <div class="popular_button" onclick="categoryClick('Nightlife')">
+              <img src="./imgs/cocktail.svg"> 
+              <h4>Nightlife</h4>
+            </div>
+            <div class="popular_button" onclick="categoryClick('Pets')">
+              <img src="./imgs/dog.svg"> 
+              <h4>Pets</h4>
+            </div>
+            <div class="popular_button" onclick="categoryClick('Restaurants')">
+              <img src="./imgs/fork.svg"> 
+              <h4>Restaurants</h4>
+            </div>
+            <div class="popular_button" onclick="categoryClick('Shopping')">
+              <img src="./imgs/purse.svg"> 
+              <h4>Shopping</h4>
+            </div>
+          </div>
+      </div>
+
+      <div id="category_selector">
+
+          <h4>All Categories</h4>
+
+          <div id="categories">
+              <!-- Inputting Through JS -->
+          </div>
+      </div>
+    </div>
+
+    <div id="footer_wrapper">
+      <img src="./imgs/logo_white.png">
+      
+      <div id="footer_breadcrumbs">
+        <a href="https://app.rankpro.com/sign-in/">Business Login</a>
+        <h1>|</h1>
+        <a href="https://rankpro.com/terms">Terms of Use</a>
+        <h1>|</h1>
+        <a  href="https://rankpro.com/privacy-policy">Privacy Policy</a>
+      </div>
+
+      <h4>© Copyright 2023 RankPro, LLC | All Rights Reserved.</h4>
+    </div>
+    
+  </div>
+
+  <script src="index_js/Categories.js"></script>
+  <script src="index_js/Main.js"></script>
+  <script src="index_js/HTML.js"></script>
+  <script src="index_js/Generate.js"></script>
+
+</body>
+</hmtl>
+
+
